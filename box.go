@@ -216,6 +216,7 @@ func (b *Box) indexDirectories() {
 	}
 }
 
+// ResolutionDir returns the absolute path to the box directory.
 func (b *Box) ResolutionDir() string {
 	return filepath.Join(b.callingDir, b.Path)
 }
