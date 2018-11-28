@@ -216,6 +216,10 @@ func (b *Box) indexDirectories() {
 	}
 }
 
+func (b *Box) ResolutionDir() string {
+	return filepath.Join(b.callingDir, b.Path)
+}
+
 func fileFor(p string, name string) (File, error) {
 	fi, err := os.Stat(p)
 	if err != nil {
