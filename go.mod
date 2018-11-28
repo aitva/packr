@@ -1,4 +1,4 @@
-module github.com/gobuffalo/packr
+module github.com/aitva/packr
 
 require (
 	github.com/gobuffalo/envy v1.6.9
